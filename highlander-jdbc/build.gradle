@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':highlander-api')
+
+    testCompile 'com.jayway.awaitility:awaitility:1.6.1'
+    testCompile 'com.h2database:h2:1.4.181'
+}
